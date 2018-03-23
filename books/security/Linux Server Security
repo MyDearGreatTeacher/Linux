@@ -1,0 +1,209 @@
+Linux Server Security: Hack and Defend
+Chris Binnie
+ISBN: 978-1-119-27765-1
+May 2016
+144 pages
+
+
+
+Chapter 1: Invisibility Cloak 1
+Background 1
+Probing Ports 1
+Confusing a Port Scanner 2
+Installing knockd 2
+Packages 3
+Changing Default Settings 3
+Altering Filesystem Locations 4
+Some Config Options 5
+Starting the Service 5
+Changing the Default Network Interface 5
+Packet Types and Timing 5
+Testing Your Install 6
+Port Knocking Clients 7
+Making Your Server Invisible 7
+Testing Your iptables 8
+Saving iptables Rules 9
+Further Considerations 10
+Smartphone Client 10
+Troubleshooting 10
+Security Considerations 10
+Ephemeral Sequences 11
+Summary 12
+
+Chapter 2: Digitally Fingerprint Your Files 13
+Filesystem Integrity 13
+Whole Filesystem 16
+Rootkits 17
+Confi guration 19
+False Positives 21
+Well Designed 22
+Summary 23
+
+Chapter 3: Twenty-First-Century Netcat 25
+History 25
+Installation Packages 27
+Getting Started 27
+Transferring Files 29
+Chatting Example 30
+Chaining Commands Together 30
+Secure Communications 31
+Executables 33
+Access Control Lists 34
+Miscellaneous Options 34
+Summary 35
+
+Chapter 4: Denying Service 37
+NTP Infrastructure 37
+NTP Reflection Attacks 38
+Attack Reporting 40
+Preventing SNMP Reflection 41
+DNS Resolvers 42
+Complicity 43
+Bringing a Nation to Its Knees 44
+Mapping Attacks 45
+Summary 46
+
+Chapter 5: Nping 49
+Functionality 49
+TCP 50
+Interpreter 51
+UDP 52
+ICMP 52
+ARP 53
+Payload Options 53
+Echo Mode 54
+Other Nping Options 57
+Summary 58
+
+Chapter 6: Logging Reconnoiters 59
+ICMP Misconceptions 59
+tcpdump 60
+Iptables 61
+Multipart Rules 64
+Log Everything for Forensic Analysis 64
+
+iptables -I INPUT -m state --state NEW -j LOG --log-prefix "Logged Traffic: "
+
+
+Hardening 65
+Summary 67
+
+Chapter 7: Nmap’s Prodigious NSE 69
+
+Basic Port Scanning 69
+
+The Nmap Scripting Engine 71
+
+Timing Templates 73
+
+Categorizing Scripts 74
+
+Contributing Factors 75
+
+Security Holes 75
+
+Authentication Checks 77
+
+Discovery 78
+
+Updating Scripts 79
+
+Script Type 80
+
+Regular Expressions 80
+
+Graphical User Interfaces 81
+
+Zenmap 81
+
+Summary 82
+
+Chapter 8: Malware Detection 85
+
+Getting Started 85
+
+Definition Update Frequency 85
+
+Malware Hash Registry 86
+
+Prevalent Threats 86
+
+LMD Features 86
+
+Monitoring Filesystems 88
+
+Installation 88
+
+Monitoring Modes 90
+
+Configuration 91
+
+Exclusions 91
+
+Running from the CLI 92
+
+Reporting 92
+
+Quarantining and Cleaning 93
+
+Updating LMD 94
+
+Scanning and Stopping Scans 94
+
+Cron Job 96
+
+Reporting Malware 96
+
+Apache Integration 96
+
+Summary 97
+
+Chapter 9: Password Cracking with Hashcat 99
+
+History 99
+
+Understanding Passwords 99
+
+Keyspace 100
+
+Hashes101
+
+Using Hashcat 103
+
+Hashcat Capabilities 103
+
+Installation 103
+
+Hash Identifi cation104
+
+Choosing Attack Mode 106
+
+Downloading a Wordlist 106
+
+Rainbow Tables 107
+
+Running Hashcat 107
+
+oclHashcat 110
+
+Hashcat-Utils 111
+
+Summary 111
+
+Chapter 10: SQL Injection Attacks 113
+
+History 113
+
+Basic SQLi 114
+
+Mitigating SQLi in PHP 115
+
+Exploiting SQL Flaws 117
+
+Launching an Attack 118
+
+Trying SQLi Legally 120
+
+Summary 121
+
+Index 123
