@@ -7,6 +7,16 @@
 
 https://docs.docker.com/install/
 
+Ubuntu 16.04下安裝還是比較方便的，使用命令：
+
+apt-get install docker.io
+
+安裝成功之後，查看是否安裝成功：
+
+docker --version
+
+docker images
+
 實戰lab1:熟悉docker指令
 
 
@@ -30,6 +40,9 @@ https://github.com/galexrt/docker-vlc
 下載/安裝鏡像:docker pull galexrt/vlc:latest
 
 執行: docker run -d quay.io/galexrt/vlc:latest YOUR_VLC_SOUT_STRING
+
+
+實戰lab:建置你的Dockerized Tensorflow學習環境
 
 實戰lab:使用Docker學習 Kali linux
 
@@ -80,7 +93,82 @@ Or set environment variable:
 
 docker run -d -p 80:80 -p 3306:3306 -e MYSQL_PASS="mypass" infoslack/dvwa
 
-實戰lab:建置你的Dockerized Tensorflow學習環境
+實戰lab:使用Docker學習網站滲透測試(securityshepherd)
+
+https://github.com/OWASP/SecurityShepherd
+
+下載/安裝鏡像:docker pull ismisepaul/securityshepherd
+
+Note: You'll need to get a shell on your docker container and run mysql and tomcat manually;
+
+docker run -i -p 80:80 -p 443:443 -p 27017:27017 -t ismisepaul/securityshepherd /bin/bash
+
+/usr/bin/mongod &
+/usr/bin/mysqld_safe &
+service tomcat7 start
+
+
+實戰lab:使用Docker學習網站滲透測試(dvxte)
+
+
+https://github.com/davevs/dvxte
+
+項目簡介
+
+Dvxte是一個Docker容器，裡面包含了幾個漏洞演練程式。通過使用Docker容器更容易設置，並可以更方便的進行重置等操作。
+
+包含環境
+目前在Docker容器中實現了以下環境：
+
+DVWA https://github.com/ethicalhack3r/DVWA
+
+DVWServices https://github.com/snoopysecurity/dvws
+
+DVWSockets https://github.com/interference-security/DVWS
+
+WebGoat https://github.com/WebGoat/WebGoat
+
+Juiceshop https://github.com/bkimminich/juice-shop
+
+Railsgoat https://github.com/OWASP/railsgoat
+
+django.NV https://github.com/nVisium/django.nV
+
+Buggy Bank https://www.mavensecurity.com/about/webmaven/
+
+Mutilidae II https://sourceforge.net/projects/mutillidae/files/
+
+包含工具
+
+容器中安裝了以下工具：
+
+Mailcatcher https://mailcatcher.me/
+
+Brakeman http://brakemanscanner.org/
+
+RIPS https://sourceforge.net/projects/rips-scanner/files/
+
+TODO
+
+未來計畫加入：
+
+Security Shepherd https://github.com/OWASP/SecurityShepherd
+
+Webgoat.net https://github.com/jerryhoff/WebGoat.NET
+
+實戰lab:使用Docker學習安全檢測
+
+Vane：開源WordPress安全檢測工具
+
+http://www.mottoin.com/93624.html
+
+docker build -t vane .
+
+docker run --rm vane --help
+
+docker pull wordpress
+
+docker run --name some-wordpress --link some-mysql:mysql -d wordpress
 
 
 NeXT
