@@ -11,10 +11,12 @@
 # 學習最新的Centos 7
 
 # 架設伺服器
-
-使用預設的網站伺服器
-
+Apache網站伺服器
+Nginx網站伺服器
 Mysql資料庫伺服器
+Wordpress 
+Moodle
+
 
 # 駭客專用的Kali Linux(2018.1最新版本)
 
