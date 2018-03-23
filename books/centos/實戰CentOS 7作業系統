@@ -1,0 +1,22 @@
+實戰CentOS 7作業系統（附光碟開機直接可用LiveCD）
+作者： 洪瑞展  出版社：碁峰  出版日期：2015/07/31
+
+Chapter 01 認識Linux
+Chapter 02 安裝CentOS與虛擬環境
+Chapter 03 CentOS 7作業系統操作
+Chapter 04 系統檔案目錄與系統指令
+Chapter 05 文字編輯器
+Chapter 06 軟體套件的管理
+Chapter 07 網路管理與組態設定
+Chapter 08 自動化Shell Script 設計
+Chapter 09 使用者帳戶環境與管理
+Chapter 10 系統更新與備份
+Chapter 11 系統服務與工作排程
+Chapter 12 磁碟與檔案系統管理
+Chapter 13 DHCP伺服器
+Chapter 14 檔案伺服器
+Chapter 15 網域名稱系統伺服器
+Chapter 16 網頁伺服器
+Chapter 17 電子郵件伺服器
+Chapter 18 輕量級虛擬化Docker Container
+Chapter 19 使用公有雲建置CentOS 7
