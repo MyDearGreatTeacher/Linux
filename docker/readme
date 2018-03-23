@@ -281,6 +281,8 @@ service tomcat7 start
 
 實戰lab:使用Docker學習網站滲透測試(dvxte)
 
+Dvxte：涵盖多个漏洞演练程序的Docker容器| MottoIN
+www.mottoin.com/98368.html
 
 https://github.com/davevs/dvxte
 
