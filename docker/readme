@@ -7,6 +7,10 @@
 
 https://docs.docker.com/install/
 
+實戰lab1:熟悉docker指令
+
+
+
 實戰lab:使用Docker學習 Mysql資料庫技術
 
 實戰lab:使用Docker學習 redis資料庫技術
@@ -14,6 +18,18 @@ https://docs.docker.com/install/
 下載/安裝鏡像:docker pull redis
 
 執行:docker run --name some-redis -d redis
+
+https://hub.docker.com/_/redis/
+
+實戰lab:使用Docker學習vlc
+
+https://github.com/galexrt/docker-vlc
+
+下載/安裝鏡像:docker pull quay.io/galexrt/vlc:latest
+
+下載/安裝鏡像:docker pull galexrt/vlc:latest
+
+執行: docker run -d quay.io/galexrt/vlc:latest YOUR_VLC_SOUT_STRING
 
 實戰lab:使用Docker學習 Kali linux
 
