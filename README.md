@@ -23,6 +23,12 @@ Wordpress
 
 Moodle
 
+# 架設直播串流伺服器
+
+使用VLC架設HTTP Streaming Server  https://newtoypia.blogspot.tw/2014/11/vlc.html
+
+使用VLC架設RTSP 串流伺服器
+
 # 玩轉docker雲端技術
 
 # 在Linux上學c程式
