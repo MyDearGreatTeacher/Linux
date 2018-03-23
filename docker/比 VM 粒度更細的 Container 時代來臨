@@ -1,0 +1,57 @@
+比 VM 粒度更細的 Container 時代來臨 : 使用Docker不再需要架設系統 (全新第二版) 
+浙江大學SEL實驗室  出版商:佳魁資訊  出版日期:2018-02-06
+
+第一部分　Docker深入解讀
+Chapter 01" 從容器到容器雲
+1.1　雲端運算平台
+1.2　容器，新的革命
+1.3　進化：從容器到容器雲
+Chapter 02" Docker 基礎
+2.1　Docker的安裝
+2.2　Docker指令引數解讀
+2.3　架設你的第一個Docker應用堆疊
+Chapter 03" Docker 核心原理解讀
+3.1　Docker背後的核心知識
+3.2　Docker架構概覽
+3.3　client和daemon
+3.4　libcontainer
+3.5　Docker映像檔管理
+3.6　Docker儲存管理
+3.7　Docker資料卷冊
+3.8　Docker網路管理
+3.9　Docker與容器安全
+Chapter 04" Docker 進階實作技巧
+4.1　容器化思維
+4.2　Docker進階網路實作 
+4.3　Dockerfile最佳做法
+4.4　Docker容器的監控方法
+4.5　容器化應用建置的基礎：高可用配置中心
+第二部分　Docker雲端平台解讀
+Chapter 05" 建置自己的容器雲
+5.1 再談雲端平台的層次架構
+5.2 從小工到專家
+Chapter 06" 專注編排與部署：三劍客與Fleet 
+6.1　編排小神器Fig/Compose
+6.2　跨平台宿主環境管理工具Machine
+6.3　叢集抽象工具Swarm
+6.4　編排之秀Fleet
+Chapter 07" 專注應用支撐和執行時期：Flynn 和Deis
+7.1　Flynn，一個小而美的兩層架構
+7.2　談談Deis與Flynn
+Chapter 08" 一切皆容器：Kubernetes 
+8.1  Kubernetes是個什麼樣的專案
+8.2  Kubernetes的設計解讀
+8.3  Kubernetes核心元件解讀
+8.4  Kubernetes儲存核心原理
+8.5  Kubernetes網路核心原理
+8.6  Kubernetes多租戶管理與資源控制
+8.7  Kubernetes進階實作
+8.8  Kubernetes未來動向
+8.9 不要停止思考
+第三部分　附錄
+Appendix A" Docker 的安裝
+Appendix B" 閱讀Docker 原始程式碼的神兵利器
+Appendix C" 快速熟悉開放原始碼專案
+Appendix D" cgroups 的測試與使用
+Appendix E" cgroups 子系統設定參數介紹
+Appendix F" Kubernetes 的安裝
