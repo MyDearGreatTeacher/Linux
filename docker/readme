@@ -1,1 +1,71 @@
 
+快速體驗Docker
+
+本次課程將以Ubuntu 18.04 LTS 64-bit建置Docker快活測試環境
+
+實戰lab1:安裝Docker環境(Docker v 18.03)
+
+https://docs.docker.com/install/
+
+實戰lab:使用Docker學習 Mysql資料庫技術
+
+實戰lab:使用Docker學習 redis資料庫技術
+
+下載/安裝鏡像:docker pull redis
+
+執行:docker run --name some-redis -d redis
+
+實戰lab:使用Docker學習 Kali linux
+
+https://www.kali.org/news/official-kali-linux-docker-images/
+
+下載/安裝鏡像:  docker pull kalilinux/kali-linux-docker
+
+執行: docker run -t -i kalilinux/kali-linux-docker
+
+實戰lab:使用Docker學習網站滲透測試(OWASP Mutillidae II)
+
+Docker container for OWASP Mutillidae II Web Pen-Test Practice Application
+
+https://github.com/citizen-stig/dockermutillidae
+
+下載/安裝鏡像: docker pull citizenstig/nowasp
+
+Start with random mysql password: docker run -d -p 80:80 citizenstig/nowasp
+
+Or specify it as environment variable: 
+
+sudo docker run -d -p 80:80 -p 3306:3306 -e MYSQL_PASS="Chang3ME!" citizenstig/nowasp
+
+
+實戰lab:使用Docker學習網站滲透測試(webgoat-8.0)
+
+https://github.com/WebGoat/WebGoat
+
+下載/安裝鏡像:docker pull webgoat/webgoat-8.0
+
+docker run -p 8080:8080 -it webgoat/webgoat-8.0 /home/webgoat/start.sh 
+
+http://192.168.99.100:8080/WebGoat
+
+實戰lab:使用Docker學習網站滲透測試(webgoat-8.0)
+
+docker-dvwa Docker image for DVWA(Damn Vulnerable Web Application)
+
+https://github.com/infoslack/docker-dvwa
+
+下載/安裝鏡像:docker pull infoslack/dvwa
+
+Start with random mysql password: 
+
+docker run -d -p 80:80 infoslack/dvwa
+
+Or set environment variable: 
+
+docker run -d -p 80:80 -p 3306:3306 -e MYSQL_PASS="mypass" infoslack/dvwa
+
+實戰lab:建置你的Dockerized Tensorflow學習環境
+
+
+NeXT
+透過這次課程你可以在期待我們更多的課程
