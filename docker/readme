@@ -35,6 +35,66 @@ https://hub.docker.com/_/redis/
 
 =====================================
 
+程式開發
+
+---------------------------------------------------
+
+docker pull mhndev/docker-lua
+
+Default lua version : 5.3.4
+
+Default luarocks version : 2.4.1
+
+docker-compose exec lua_server install-module <module-name>
+
+---------------------------------------------------
+
+docker pull golang
+
+Dockerfile, writing something along the lines of the following will compile and run your project:
+
+FROM golang:1.8
+
+WORKDIR /go/src/app
+COPY . .
+
+RUN go get -d -v ./...
+RUN go install -v ./...
+
+CMD ["app"]
+You can then build and run the Docker image:
+
+$ docker build -t my-golang-app .
+
+$ docker run -it --rm --name my-running-app my-golang-app
+
+--------------------------------------
+
+docker pull ruby
+
+Create a Dockerfile in your Ruby app project
+FROM ruby:2.5
+
+# throw errors if Gemfile has been modified since Gemfile.lock
+RUN bundle config --global frozen 1
+
+WORKDIR /usr/src/app
+
+COPY Gemfile Gemfile.lock ./
+RUN bundle install
+
+COPY . .
+
+CMD ["./your-daemon-or-script.rb"]
+Put this file in the root of your app, next to the Gemfile.
+
+You can then build and run the Ruby image:
+
+$ docker build -t my-ruby-app .
+$ docker run -it --name my-running-script my-ruby-app
+
+=====================================
+
 實戰lab:使用Docker學習vlc
 
 https://github.com/galexrt/docker-vlc
