@@ -1,0 +1,206 @@
+用LEMP取代上世紀的LAMP：NginX快穩狠準的網站伺服器
+作者： 陶利軍  出版社：佳魁資訊  出版日期：2015/12/30
+
+
+第1部分  Nginx與    PHP
+
+第1章  環境部署
+1.1 php-fpm 的安裝與測試 
+1.2 php-fpm 的目錄結構  
+1.3 管理php-fpm  
+1.4 認識FastCGI 模組  
+1.5 與FastCGI 模組相關的設定檔  
+1.6 Nginx 和PHP 的結合     
+
+第2章  PHP存取Memcached     
+2.1 第一個實例  
+2.2 第二個實例  
+2.3 手動清除Memcached 快取     
+
+第3章  php-fpm的狀態     
+3.1  增加設定     
+3.2  造訪測試     
+
+第2部分  Nginx與Python
+
+第4章  uWSGI伺服器     
+4.1  uwsgi協定     
+4.2  uWSGI伺服器     
+
+第5章  Nginx的uwsgi模組     
+5.1  範例設定     
+5.2  指令     
+5.3  傳遞到uWSGI伺服器的參數     
+5.4  使用設定     
+
+第6章  環境部署     
+6.1  安裝Nginx     
+6.2  安裝Python     
+
+第7章  實例運行     
+7.1 實例1：執行開發伺服器 
+7.2 實例2：以uWSGI 方式執行 
+7.3 實例3：使用Django 框架 
+7.4 實例4：一個uWSGI 實例實現對多個虛擬主機的支援 
+7.5 實例5：分別監聽在不同通訊埠上的兩個uWSGI 實例 
+7.6 實例6：針對Nginx uwsgi 模組應用舉例的實作方式 
+7.7 實例7：叢集的實現 
+7.8 實例8：階段儲存     
+
+第8章  快取     
+8.1  環境架設     
+8.2  Django的快取     
+8.3  快取的實現     
+8.4  模組cache_purge     
+
+第9章  階段     
+9.1  啟用階段功能     
+9.2  設定儲存階段引擎     
+9.3  階段的使用     
+9.4  測試用戶端瀏覽器是否接受cookie     
+9.5  儲存階段的時機     
+9.6  清除階段表     
+9.7  瀏覽器關閉階段與持久階段     
+9.8  與階段相關的設定選項      
+
+第3部分  Nginx與Perl
+
+第10章  Nginx提供Perl CGI存取     
+10.1  CGI的實現     
+
+第11章  Nginx與Perl FastCGI     
+11.1 Perl FastCGI 的相關安裝  
+11.2 Nginx 和Perl 的結合  
+11.3 Perl 存取Memcached     
+
+第12章  Nginx透過內建的Perl模組執行Perl程式     
+
+第4部分  Nginx與Java
+
+第13章  環境部署     
+13.1 下載並安裝JDK  
+13.2 下載並安裝Tomcat  
+13.3 Tomcat 的目錄結構  
+13.4 管理Tomcat     
+
+第14章  Nginx與Tomcat的結合     
+14.1  設定範例     
+14.2  指令     
+14.3  變數     
+14.4  使用設定     
+
+第15章  設定server.xml檔案     
+15.1 第一部分：XML 資訊 
+15.2 第二部分：Server 元素 
+15.3 第三部分：Listener 元素監聽器的設定  
+15.4 第四部分：全域命名資源設定 
+15.5 第五部分：Service 元素 
+15.6 第六部分：執行緒  
+15.7 第七部分：連接器Connector 
+15.8 第八部分：Engine 的設定 
+15.9 第九部分：叢集的設定  
+15.10 第十部分：認證域  
+15.11 第十一部分：虛擬主機  
+15.12 第十二部分：Valve 設定     
+15.13 Tomcat 叢集與Memcached儲存階段     
+
+第16章  設定web.xml檔案     
+16.1 conf/web.xml  
+16.2 webapps/manager/WEB-INF/web.xml 
+16.3 webapps/examples/WEB-INF/web.xml 
+16.4 webapps/host-manager/WEB-INF/web.xml     
+
+第17章  設定context.xml檔案     
+17.1 預設設定檔  
+17.2 Context 元素 
+17.3 Manager 元素
+
+第18章  設定tomcat-users.xml檔案     
+18.1 預設設定檔  
+18.2 相關指令  
+18.3 分析設定檔     
+
+第19章  設定catalina.policy檔案     
+19.1 預設設定檔 
+19.2 策略格式  
+19.3 相關指令  
+19.4 分析設定檔     
+
+第20章  設定catalina.properties檔案     
+20.1 catalina.properties 檔案 
+20.2 類別載入器 
+20.3 相關的類別載入器  
+20.4 Loader 的通用屬性 
+20.5 Loader 標準執行  
+20.6 部署VirtualWebappLoader 
+
+第21章  在容器元素中可以使用的篩檢程式    
+21.1 預設字元集篩檢程式  
+21.2 預防CSRF 篩檢程式 
+21.3 Expires 篩檢程式  
+21.4 遠端地址篩檢程式  
+21.5 遠端主機篩檢程式 
+21.6 遠端IP 篩檢程式  
+21.7 Request Dumper 篩檢程式  
+21.8 WebDAV Fix 篩檢程式     
+
+第5部分  Nginx與Ruby
+
+第22章  環境部署     
+22.1 安裝Ruby 
+22.2 關於gem 工具 
+22.3 安裝Passenger 
+22.4 Phusion Passenger 模組設定指令 
+22.5 分析和系統維護工具  
+22.6 投入生產後的維護     
+22.7 Passenger 的相關技術  
+22.8 獨立執行Passenger 守護處理程序  
+22.9 Passenger下的Rails     
+
+第23章  走進Rails     
+23.1 安裝Rails 框架 
+23.2 分析目錄結構 
+23.3 專案下的目錄及檔案  
+23.4 認識Rails 架構  
+23.5 Rails 的一般設定 
+23.6 Assets 的設定  
+23.7 Generators 的設定 
+23.8 設定Middleware  
+23.9 設定 i18n 
+23.10 Rails 環境設定  
+23.11 Rails 的組成部分及其設定  
+23.12 Railties  
+23.13 Rest 
+23.14 Rails 內建的HTTP 認證機制 
+23.15 基本身份認證  
+23.16 摘要身份認證
+
+第24章  快取     
+24.1 快取策略 
+24.2 快取技術 
+24.3 Dalli — Memcached 的用戶端
+24.4 實例
+
+第6部分  Nginx與ASP.NET
+
+第25章  Mono     
+25.1 什麼是Mono 
+25.2 Mono 的基本使用 
+25.3 mconfig 指令  
+25.4 web.config 檔案     
+
+第26章  Nginx與ASP.NET的解決方案     
+26.1 方案一：Nginx+mono+ fastcgimono-Server 
+26.2 方案二：Nginx+mono+Jexus  
+26.3 方案三：Nginx+mono+xsp     
+
+第27章  Session儲存     
+27.1 儲存階段的型態 
+27.2 狀態伺服器     
+
+第28章  快取      
+28.1 動態檔案快取     
+
+第29章  Nginx代理IIS     
+
+後記：Nginx與Apache
