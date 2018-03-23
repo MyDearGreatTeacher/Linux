@@ -17,7 +17,112 @@ docker --version
 
 docker images
 
+=====================================
+
 實戰lab1:熟悉docker指令
+
+https://www.gitbook.com/book/joshhu/dockercommands/details
+
+docker的指令主要分為四大類，分別是：
+Linux系統相關指令
+Docker Registry相關指令
+映像檔相關指令
+Container相關指令
+
+
+docker info
+
+docker version  列出目前Docker的版本，以及Go語言的版本等。
+
+用途：常用來檢查是否要昇級到較高的Docker版本。
+
+docker search nginx
+
+docker search -s 10 nginx
+
+在Docker Hub找中尋找映像檔用的。最好用的就是-s參數，用來找評等較高(星級)的映像檔。
+由於Docker Hub是人人可上傳的，因此映像檔的品質參差不齊。查看大家評等較高的映像檔，品質較有口碑。
+
+列出本機映像檔docker images
+
+docker images -a
+
+-a：列出完整的映像檔層次資訊。每個映像檔是由不同層次組成的，我們會在稍後說明。
+-q：只列出映像檔ID。這在做映像檔批次處理時很方便。
+-tree：官方文件已經沒有這個參數，但還是可以用。列出映像檔不同層次之間的樹狀關係。
+
+下載映像檔docker pull
+
+將映像檔存入/匯出電腦檔案格式docker save/load
+
+Docker的映像檔雖然名為檔案，但其格式十分複雜(本書後面章節會有說明)。
+你也不知道他存在哪，也不知道什麼格式，如果想要和其它人交換時 ，不想上傳到Docker Hub，
+不想自己架設私有Docker Registry，就可以用這兩個參數存成tarball格式及匯出。
+存入時別忘了加-o參數，要不然只會在顯示不會真的壓縮。
+
+$ docker save -o webdemou12.tar joshhu/webdemo:u12
+$ ls -al
+total 294020
+drwxrwxr-x  4 joshhu joshhu      4096 Mar 26 00:37 .
+drwxr-xr-x 27 joshhu joshhu      4096 Mar 25 20:03 ..
+drwxr-xr-x  3 joshhu joshhu      4096 Mar 22 08:25 test
+drwxr-xr-x  3 joshhu joshhu      4096 Mar 25 23:52 u12
+-rw-r--r--  1 root   root   301058560 Mar 26 00:37 webdemou12.tar
+
+
+將tarball還原回映像檔格式，則用load。可輸入
+
+$ docker load --input webdemou12.tar
+
+-----------------------------
+Container和映像檔之間的操作
+
+commit：將Container的改變存入映像檔
+export：將Container存成快照
+import：從Container快照恢復成映像檔
+
+Container執行時的操作
+create：建立Container並執行指令
+run：同create
+kill：刪除執行中的Container，但Container還是存在，只是死了。
+rm：刪除Container(停止或運行中都行)，Container就從這世上消失了
+pause：暫停執行中的Container，仍暫有記憶體停，服務不中斷
+unpause：恢復暫停中的Container
+stop：停止執行中的Container，但不暫有記憶體，服務中斷
+start：啟動停止中的Container
+restart：重新啟動Container
+wait：讓Container暫停直到Container停止為止
+rename：更名Container
+
+Container的狀態
+inspect：檢查Container的狀態(非常常用)
+stats：查看Container的CPU、記憶體及網路使用
+port：查看Container的通訊埠使用
+ps：查看Container使用狀態
+top：查看Container在主系統中的記憶體使用
+dip：查看Container的IP
+dpid：查看Container的pid
+
+Container執行時的操作
+attach：連接Container的標準輸出輸入端
+exec：在外部向Container內執行指令
+denter：進入Container
+logs：將Container內的輸出顯示到螢幕上
+
+Container和主系統之間的操作
+cp：複製Container內的檔案到主系統
+diff：列出兩個Container之間檔案系統差異
+events：列出某個時間點之前或之後的事件
+
+和Linux的指令配合使用
+
+Docker的執行常常和Linux的內部指令配合使用，如grep、awk、xargs等，會在需要的時候提及。
+下面的例子就是列出所有Container的狀態(docker stats預設只會列出指定Container的狀態)。
+
+docker ps | awk 'NR>1 {print $NF}'| xargs docker stats
+
+$ docker stats $(docker ps | awk 'NR>1 {print $NF}')
+
 
 
 不同主題學習
