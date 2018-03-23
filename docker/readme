@@ -20,6 +20,8 @@ docker images
 實戰lab1:熟悉docker指令
 
 
+不同主題學習
+=====================================
 
 實戰lab:使用Docker學習 Mysql資料庫技術
 
@@ -30,6 +32,8 @@ docker images
 執行:docker run --name some-redis -d redis
 
 https://hub.docker.com/_/redis/
+
+=====================================
 
 實戰lab:使用Docker學習vlc
 
@@ -43,6 +47,8 @@ https://github.com/galexrt/docker-vlc
 
 
 實戰lab:建置你的Dockerized Tensorflow學習環境
+
+=====================================
 
 實戰lab:使用Docker學習 Kali linux
 
