@@ -1,0 +1,87 @@
+Practical Linux Security Cookbook
+Tajinder Kalsi
+April 2016
+
+
+1: LINUX SECURITY PROBLEMS
+Introduction
+The security policy of Linux
+Configuring password protection
+Configuring server security
+Security controls
+Conducting integrity checks of the installation medium using checksum
+Using the LUKS disk encryption
+Making use of sudoers – configuring sudo access
+Scanning hosts with Nmap
+Gaining a root on a vulnerable Linux system
+
+2: CONFIGURING A SECURE AND OPTIMIZED KERNEL
+Introduction
+Requirements for building and using a kernel
+Creating a USB boot media
+Retrieving a kernel source
+Configuring and building a kernel
+Installing and booting from a kernel
+Testing and debugging a kernel
+Configuring a console for debugging using Netconsole
+Debugging a kernel on boot
+
+3: LOCAL FILESYSTEM SECURITY
+Viewing file and directory details using the ls command
+Changing the file permissions using the chmod command
+Implementing access control list (ACL)
+File handling using the mv command (moving and renaming)
+Install and configure a basic LDAP server on Ubuntu
+
+4: LOCAL AUTHENTICATION IN LINUX
+User authentication and logging
+Limiting the login capabilities of users
+Monitoring user activity using acct
+Login authentication using a USB device and PAM
+Defining user authorization controls
+
+5: REMOTE AUTHENTICATION
+Remote server/host access using SSH
+Disabling or enabling SSH root login
+Restricting remote access with key-based login into SSH
+Copying files remotely
+Setting up a Kerberos server with Ubuntu
+
+6: NETWORK SECURITY
+Managing the TCP/IP network
+Using Iptables to configure a firewall
+Blocking spoofed addresses
+Blocking incoming traffic
+Configuring and using the TCP Wrapper
+
+7: SECURITY TOOLS
+Linux sXID
+PortSentry
+Using Squid proxy
+OpenSSL Server
+Tripwire
+Shorewall
+
+8: LINUX SECURITY DISTROS
+Kali Linux
+pfSense
+DEFT – Digital Evidence and Forensic Toolkit
+NST – Network Security Toolkit
+Helix
+
+9: PATCHING A BASH VULNERABILITY
+Understanding the bash vulnerability through Shellshock
+Shellshock's security issues
+The patch management system
+Applying patches on the Linux systems
+
+10: SECURITY MONITORING AND LOGGING
+Viewing and managing log files using Logcheck
+Monitoring a network using Nmap
+Using glances for system monitoring
+Monitoring logs using MultiTail
+Using system tools – Whowatch
+Using system tools – stat
+Using system tools – lsof
+Using system tools – strace
+Using Lynis
