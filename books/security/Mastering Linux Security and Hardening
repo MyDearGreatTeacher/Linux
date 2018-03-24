@@ -1,0 +1,100 @@
+
+
+1: RUNNING LINUX IN A VIRTUAL ENVIRONMENT
+The threat landscape
+Keeping up with security news
+Introduction to VirtualBox and Cygwin
+Using Cygwin to connect to your virtual machines
+Summary
+
+2: SECURING USER ACCOUNTS
+The dangers of logging in as the root user
+The advantages of using sudo
+Setting up sudo privileges for full administrative users
+Setting up sudo for users with only certain delegated privileges
+Advanced tips and tricks for using sudo
+Locking down users' home directories the Red Hat or CentOS way
+Locking down users' home directories the Debian/Ubuntu way
+Enforcing strong password criteria
+Setting and enforcing password and account expiration
+Preventing brute-force password attacks
+Locking user accounts
+Setting up security banners
+Summary
+
+3: SECURING YOUR SERVER WITH A FIREWALL
+An overview of iptables
+Uncomplicated Firewall for Ubuntu systems
+firewalld for Red Hat systems
+nftables – a more universal type of firewall system
+Summary
+
+4: ENCRYPTING AND SSH HARDENING
+GNU Privacy Guard
+Encrypting partitions with Linux Unified Key Setup – LUKS
+Encrypting directories with eCryptfs
+Using VeraCrypt for cross-platform sharing of encrypted containers
+Ensuring that SSH protocol 1 is disabled
+Creating and managing keys for password-less logins
+Disabling root user login
+Disabling username/password logins
+Setting up a chroot environment for SFTP users
+Summary
+
+5: MASTERING DISCRETIONARY ACCESS CONTROL
+Using chown to change ownership of files and directories
+Using chmod to set permissions values on files and directories
+Using SUID and SGID on regular files
+The security implications of the SUID and SGID permissions
+Using extended file attributes to protect sensitive files
+Summary
+
+6: ACCESS CONTROL LISTS AND SHARED DIRECTORY MANAGEMENT
+Creating an access control list for either a user or a group
+Creating an inherited access control list for a directory
+Removing a specific permission by using an ACL mask
+Using the tar --acls option to prevent the loss of ACLs during a backup
+Creating a user group and adding members to it
+Creating a shared directory
+Setting the SGID bit and the sticky bit on the shared directory
+Using ACLs to access files in the shared directory
+Summary
+
+7: IMPLEMENTING MANDATORY ACCESS CONTROL WITH SELINUX AND APPARMOR
+How SELinux can benefit a systems administrator
+Setting security contexts for files and directories
+Troubleshooting with setroubleshoot
+Working with SELinux policies
+How AppArmor can benefit a systems administrator
+Looking at AppArmor profiles
+Working with AppArmor command-line utilities
+Troubleshooting AppArmor problems
+Summary
+
+8: SCANNING, AUDITING, AND HARDENING
+Installing and updating ClamAV and maldet
+Scanning with ClamAV and maldet
+SELinux considerations
+Scanning for rootkits with Rootkit Hunter
+Controlling the auditd daemon
+Creating audit rules
+Using ausearch and aureport
+Applying OpenSCAP policies with oscap
+Using SCAP Workbench
+More about OpenSCAP profiles
+Applying an OpenSCAP profile during system installation
+Summary
+
+9: VULNERABILITY SCANNING AND INTRUSION DETECTION
+Looking at Snort and Security Onion
+Scanning and hardening with Lynis
+Finding vulnerabilities with OpenVAS
+Web server scanning with Nikto
+Summary
+
+10: SECURITY TIPS AND TRICKS FOR THE BUSY BEE
+Auditing system services
+Password-protecting the GRUB 2 bootloader
+Securely configuring BIOS/UEFI
+Using a security checklist for system setup
+Summary
