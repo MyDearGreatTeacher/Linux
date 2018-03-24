@@ -1,0 +1,154 @@
+Applied Network Security
+Arthur Salmon, Warun Levesque, Michael McLafferty
+April 2017
+
+1: INTRODUCTION TO NETWORK SECURITY
+Murphy's law
+Hackers (and their types) defined
+The hacking process
+Ethical hacking issues
+Current technologies
+Recent events and statistics of network attacks
+Security for individuals versus companies
+Mitigation against threats
+Building an assessment
+Summary
+References
+
+2: SNIFFING THE NETWORK
+What is network sniffing?
+Lab 1-a scan to search for DDoS reflection UDP services
+Using Wireshark filters
+Wireshark filter cheat sheet
+Lab 2
+Sparta
+Lab 3-scanning
+Scanning a subnet
+Evading firewalls
+Gathering version info
+Starting the listener
+Summary
+
+3: HOW TO CRACK WI-FI PASSWORDS
+Why should we crack our own Wi-Fi?
+What is packet injection?
+Wi-Fi cracking tools
+The Transmission Control Protocol (TCP) handshake
+The short version (a cheat-sheet for the aircrack-ng suite)
+Summary
+
+4: CREATING A RAT USING MSFVENOM
+Remote Access Trojans
+Ways to disguise your RAT though Metasploit
+Your defence
+Summary
+References
+
+5: VEIL FRAMEWORK
+Veil-Evasion
+Veil-Pillage
+How do hackers hide their attack?
+Intrusion with a PDF
+Veil-PowerTools
+What is antivirus protection?
+Summary
+References
+
+6: SOCIAL ENGINEERING TOOLKIT AND BROWSER EXPLOITATION
+Social engineering
+What are web injections?
+Cross site scripting (XSS) attacks
+Browser exploitation with BeEF
+Summary
+
+7: ADVANCED NETWORK ATTACKS
+What is an MITM attack?
+Summary
+
+8: PASSING AND CRACKING THE HASH
+What is a hash?
+Cryptographic hash functions
+How are hashes cracked?
+How do pass the hash attacks impact businesses?
+What defences are there against hash password attacks?
+Summary
+References
+Links to download tools
+
+9: SQL INJECTION
+What is SQL and how does it work?
+SQL injection
+Ways to defend against SQL injection attacks
+Bypassing authentication
+Finding vulnerabilities from a targeted sites
+Hunting for web app vulnerabilities with Open Web Application Security Project (OWASP) ZAP
+Summary
+
+10: SCAPY
+Scapy
+Creating our first packet
+The TCP three way handshake
+Malformed packets
+ACK scan
+TCP port scanning
+Summary
+
+11: WEB APPLICATION EXPLOITS
+Web application exploits
+What tools are used for web application penetration testing?
+What is Autopwn?
+What is BeEF and how to use it?
+Summary
+
+12: EVIL TWINS AND SPOOFING
+What is an evil twin?
+What is address spoofing?
+What is DNS spoofing?
+How to detect an evil twin?
+Summary
+
+13: INJECTABLE DEVICES
+A deeper look into USB
+How does the Rubber Ducky work?
+Disabling ports
+A KeyGrabber?
+What the glitch?
+Summary
+
+14: THE INTERNET OF THINGS
+What is the Internet of Things?
+IOT and botnets
+Summary
+Sources
+
+15: DETECTION SYSTEMS
+IDS
+IPS
+Host based
+Network-based
+Physical
+Summary of differences
+Security Information and Event Management (SIEM)
+Splunk
+Alert status
+IDS versus IPS
+Snort as an IPS
+Lab 1-installing Snort and creating ICMP rules lab
+Lab 2-create the following snort.conf and icmp.rules files
+Lab 3-execute Snort
+Lab 4-execute Snort as Daemon
+Summary
+
+16: ADVANCE WIRELESS SECURITY LAB USING THE WI-FI PINEAPPLE NANO/TETRA
+The history of Wi-Fi - the WLAN standard
+Wireless vulnerability
+The Wi-Fi Pineapple
+For penetration testing
+Summary
+
+17: OFFENSIVE SECURITY AND THREAT HUNTING
+What is offensive security?
+SET browser exploit lab
+Threat hunting platforms
+Using the Pineapple for offensive security
+Summary
