@@ -198,3 +198,27 @@ nping --tcp-connect --rate=9000 - c 900000 --quiet 192.168.1.1
 -c 900000 : 重複執行這個動作900000 回。
 --quiet 使用靜音模式，只顯示必要訊息。
 ```
+# YOUTUBE 影片
+```
+TCP connect flood – DoS using NPING
+https://www.youtube.com/watch?v=-rJGLinNFqk
+```
+
+```
+
+```
+
+
+```
+
+```
+
+
+```
+
+```
+
+
+```
+
+```
