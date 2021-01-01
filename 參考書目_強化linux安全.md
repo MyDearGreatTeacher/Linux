@@ -558,26 +558,3 @@ Appendix A 企業級Linux 指令速查指南
 Appendix B 網路工具資源整理
 ```
 
-#
-```
-Linux iptables 速查手冊
-作者： Gregor N. Purdy   譯者： 林長毅  歐萊禮    2004/10/15
-觀念
-　　應用
-　　設定 iptables
-　　連線追蹤
-　　統計
-　　網路位址轉譯（NAT）
-　　來源位址轉譯（SNAT）與偽裝
-　　目的位址轉譯（DNAT）
-　　透明代理
-　　負載均攤
-　　乏態與具態防火牆
-　　常用工具
-　　iptables 命令參考
-　　求助
-　　iptables 的子命令
-　　篩選條件與處置作為
-　　工具命令參考
-　　iptables-restore
-```
