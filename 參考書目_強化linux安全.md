@@ -123,6 +123,12 @@ Released August 2018
 Publisher(s): Pearson IT Certification
 ISBN: 97801348530
 
+https://www.pearson.com/us/higher-education/program/Rothwell-Linux-Essentials-for-Cybersecurity/PGM1965549.html?tab=contents
+https://w
+
+ww.oreilly.com/library/view/linux-essentials-for/9780134853017/
+
+
 第1章Linux發行版及其核心組件 2
 1.1 Linux介紹 2
 1.2 Linux發行版 3
